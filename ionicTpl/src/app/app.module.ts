@@ -8,6 +8,7 @@ import { IonicApp, IonicModule, IonicErrorHandler, DeepLinkConfig }           fr
 import { StatusBar }                                                          from '@ionic-native/status-bar';
 import { TranslateModule, TranslateLoader }                                   from '@ngx-translate/core';
 import { TranslateHttpLoader }                                                from '@ngx-translate/http-loader';
+import { ServiceWorkerModule } from '@angular/service-worker';
 /*=c8o_ModuleTsImports*/
 
 import { C8o, HttpXsrfInterceptor }                                           from "c8osdkangular";
@@ -51,6 +52,7 @@ export function createTranslateLoader(http: HttpClient) {
           deps: [HttpClient]
         }
 	}),
+	ServiceWorkerModule.register('ngsw-worker.js', { enabled: true }),
     IonicModule.forRoot(MyApp, {preloadModules: true})
   /*End_c8o_NgModules*/],
   bootstrap: [IonicApp],

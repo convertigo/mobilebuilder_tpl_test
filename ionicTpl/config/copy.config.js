@@ -36,10 +36,9 @@ module.exports = {
         src: '{{SRC}}/plugins.txt',
         dest: '../DisplayObjects/mobile/'
     },
-    copySwToolbox:
-    {
-        src: '{{ROOT}}/node_modules/sw-toolbox/sw-toolbox.js',
-        dest: '../DisplayObjects/mobile/build/'
-    }
-
+    copySwAng:
+	{
+    	src: '{{ROOT}}/node_modules/@angular/service-worker/ngsw-worker.js',
+    	dest: '../DisplayObjects/mobile/'
+	}
 };
