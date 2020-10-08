@@ -12,7 +12,7 @@
     "ionic:build:prod":"node --max_old_space_size=8192 ./node_modules/@ionic/app-scripts/bin/ionic-app-scripts.js  build --prod --enableLint false && npm run ngsw-config",
     "ionic:serve:eval": "ionic-app-scripts serve --enableLint false --sourceMapType eval",
     "ionic:serve:nosourcemap": "ionic-app-scripts serve --enableLint false --generateSourceMap false",
-    "ionic:serve": "ionic-app-scripts serve --enablelint false"
+    "ionic:serve": "ionic-app-scripts serve --enablelint false && npm run ngsw-config"
   },
   "dependencies": {
     "@angular/animations": "5.2.11",
