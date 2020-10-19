@@ -4,7 +4,7 @@
   "homepage": "http://www.convertigo.com/",
   "private": true,
   "scripts": {
-    "ngsw-config": "node_modules/.bin/ngsw-config ../DisplayObjects/mobile src/ngsw-config.json",
+    "ngsw-config": "node_modules/.bin/ngsw-config ../DisplayObjects/mobile src/ngsw-config.json /convertigo/projects/test/DisplayObjects/mobile/",
     "ngsw-copy": "cp node_modules/@angular/service-worker/ngsw-worker.js www/",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build --enableLint false --generateSourceMap false",
