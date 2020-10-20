@@ -4,6 +4,7 @@
   "homepage": "http://www.convertigo.com/",
   "private": true,
   "scripts": {
+    "test": "webdriver-manager update && webdriver-manager start --detach && protractor ./e2e/protractor.conf.js",
     "ngsw-config": "node_modules/.bin/ngsw-config ../DisplayObjects/mobile src/ngsw-config.json /convertigo/projects/{{c8o_project}}/DisplayObjects/mobile/",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build --enableLint false --generateSourceMap false",
@@ -42,7 +43,22 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.4",
-    "typescript": "~2.6.2"
+    "typescript": "~2.6.2",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "^6.0.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~5.0.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "html-dnd":"1.2.1",
+    "selenium-webdriver":"4.0.0-alpha.7"
   },
   "description": "MyApp: An Ionic project",
   "cordovaPlugins": [
