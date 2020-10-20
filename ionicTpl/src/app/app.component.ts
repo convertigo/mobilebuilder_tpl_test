@@ -1,8 +1,9 @@
 import { Component, ViewChild}                              from '@angular/core';
 import { ChangeDetectorRef, Injector}                       from '@angular/core';
 import { enableProdMode}                                    from '@angular/core';
-enableProdMode();
+import { SwUpdate }                                         from '@angular/service-worker';
 
+import { AlertController }                                  from 'ionic-angular';
 import { Platform, Nav, App, Events, LoadingController}     from 'ionic-angular';
 import { StatusBar }                                        from '@ionic-native/status-bar';
 import { TranslateService }                                 from '@ngx-translate/core';
@@ -131,6 +132,7 @@ export class MyApp extends C8oPageBase {
              */
             this.c8o.finalizeInit().then(()=>{
                 this.resetImageCache();
+                
                 /*Begin_c8o_AppInitialization*/
                 /*End_c8o_AppInitialization*/
             });
