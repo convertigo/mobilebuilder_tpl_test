@@ -33,7 +33,7 @@
     "ionicons": "3.0.0",
     "rxjs": "6.3.3",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.29",
+    "zone.js": "0.11.3",
     "@ngx-translate/core":"9.0.2",
     "@ngx-translate/http-loader":"2.0.1",
     "animate.css": "3.7.0",  
