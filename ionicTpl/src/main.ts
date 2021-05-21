@@ -1,3 +1,4 @@
+import './polyfills'
 import './theme/variables.scss';
 import './theme/ionic.scss';
 import './app/app.scss';
