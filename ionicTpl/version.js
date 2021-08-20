@@ -43,6 +43,12 @@ const filePathAng = [{
         ),
         type: "ngsw"
     },
+     {
+        path: path.join(
+            __dirname, '..', '..', 'ngswForPWA', 'ngsw-config-sub-pwa.json'
+        ),
+        type: "ngsw"
+    },
     {
         path: path.join(
             __dirname, 'src', 'ngsw-config.json'
