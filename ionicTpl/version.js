@@ -78,7 +78,7 @@ for (let { path, type }
             i18Json.appData.version = version;
         }
         console.log(path + " read and parsed successfully");
-        fs.writeFileSync(path, JSON.stringify(i18Json, null, 2));
+        fs.writeFileSync(path, JSON.stringify(i18Json, null, 4));
         console.log("Successfully written version: " + version + " to " + path);
 
     } catch (e) {
