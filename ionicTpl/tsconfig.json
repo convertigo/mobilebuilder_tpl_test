@@ -21,7 +21,8 @@
   },
   "exclude": [
     "node_modules",
-    "tinymce"
+    "tinymce",
+	"browser-image-compression"
   ],
   "compileOnSave": false,
   "atom": {
